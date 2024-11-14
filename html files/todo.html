@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="todo.css">
+  <title>TODO App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>You do Your Todo</h1>
+    <div class="task-input">
+      <input type="text" placeholder="Task to be done">
+      <button class="add-task-btn">Add task</button>
+    </div>
+    <div class="task-list">
+      <div class="task-header">
+        <h2>Tasks</h2>
+        <span class="task-left-counts">0 task(s) todo</span>
+      </div>
+      <ul class="task-box">
+        <span>You don't have any tasks here</span>
+      </ul>
+      <button class="clear-btn">Clear All</button>
+    </div>
+    <div class="options">
+      <button class="generate-image-btn">Generate Image</button>
+      <button class="set-reminder-btn">Set Reminder</button>
+    </div>
+  </div>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="todo.js"></script>
+</body>
+</html>
+
+

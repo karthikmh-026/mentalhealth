@@ -1,0 +1,43 @@
+
+.cards{
+    display: flex;
+    margin-left: 2%;
+    
+}
+.card2{
+    margin-top: 1.5%;
+}
+
+.reset{
+    margin-left: 38%;
+    margin-top:-3.3%;
+  
+	font-size: 22px;
+	
+	cursor: pointer;
+	color:black;
+    
+}
+.submit{
+    margin-left: 55%;
+    margin-top:-2.5%;
+    
+	
+	font-size: 22px;
+
+	cursor: pointer;
+	color:black;
+    
+
+}
+.title{
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+#displayArea{
+ margin-left: 5%;
+ font-size: 30px;
+}
+.ha{
+    margin-left: 3%;
+}

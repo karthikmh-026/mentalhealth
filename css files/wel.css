@@ -1,0 +1,56 @@
+
+body{
+    font-family:sans-serif;
+    background-image: url('abstract.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.one{
+    margin-top:20%;
+}
+.ab{
+    font-size:25pt;
+    margin-left:75%;
+    margin-top:66%;
+
+
+}
+#a{
+   background-color:rgb(244, 244, 241);
+   border-radius:26px;
+   
+   }
+
+   #a:hover{
+    background-color:rgb(241, 242, 245);
+   }
+   .n{
+    align-items: end;
+   }
+   #o{
+    margin-left:2%;
+    
+   }
+   .pic{
+    mix-blend-mode: multiply;
+    margin-top: 8%;
+    margin-left: 52%;
+    transform:scale(2.5);
+   }
+   .log{
+    margin-left: 80%;
+    margin-top: 3%;
+    font-size: 150%;
+   }
+   .log b{
+    position: absolute;
+    background-color: rgb(189, 181, 181);
+    padding:3px;
+    border-radius: 18px;
+    box-shadow: 4px 2px 20px 0px rgb(247, 247, 249);
+   }
+   .log b:hover{
+    background-color:#2d2e2e;
+   }
+   
+  

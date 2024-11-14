@@ -1,0 +1,436 @@
+<html>
+    <head>
+    <title>INNER VOICE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="habit.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                           
+<script src="https://kit.fontawesome.com/a6b631c640.js" crossorigin="anonymous"></script>
+    </head>
+    <script>
+      function validateForm() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var checked = 0;
+  
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            checked++;
+          }
+        }
+  
+        if (checked === checkboxes.length) {
+          // All checkboxes are checked, allow form submission
+          alert("21 days completed...GOOD JOB")
+          return true;
+        } else {
+          // Display an error message or perform any desired action
+          alert("21 days is not completed !..");
+          return false;
+        }
+      }
+     
+    </script>
+    <style>
+      body{
+        background-color:rgb(255, 255, 255);
+      }
+    </style>
+ <body>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <nav class="navbar" style="background-color: #e5e6e7;">
+        <div class="b"><a href="homep.html" style="color:black">
+      <i class="fa fa-arrow-left fa-2x" aria-hidden="true" ></i></a></div></nav>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <b id="o"><a class="navbar-brand" href="#">HABIT &nbsp; TRACKER</a></b>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JOURNAL</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Chat Bot</a></li>
+            
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="jornal.html">Journal</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="me.html">Meditation</a></li>
+                  
+                  </ul>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="wel.html">Logout</a>
+                  </li>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+    </nav>
+     <form  action="habdata.php" method="POST" onsubmit="return validateForm()">
+      <div class="hab">
+    <label class="title">ENTER HABIT</label>&nbsp;<input type="text"   id="textInput" name="textInput" required>
+        <button type="button" onclick="displayText()">Submit</button><p id="displayArea"></p>
+        <div class="reset">
+          <input type="reset" value="RESET HABIT" style="background-color:rgb(137, 134, 134);" onclick="return confirmReset() ">
+          </div>
+          <div class= "submit">
+             
+          <input type="submit" value="COMPLETED 21 DAYS"  style="background-color:rgb(168, 183, 168)";>
+          </div>
+          
+                  <div class="cards">
+                    <div class="card2">
+                       <div class="card" style="width: 13rem;">
+                           <div class="card-body">
+                             <h5 class="card-title">DAY1</h5>
+                             <p class="card-text">It takes 21 days to make or break a habit.so, get up and start you day 1🌞</p>
+                             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                
+                          </div>   
+                                                     
+                           </div>
+                         </div>
+                         </div>
+                         <div class="card2">
+                           <div class="card" style="width: 13rem;">
+                               <div class="card-body">
+                                 <h5 class="card-title">DAY2</h5>
+                                 <p class="card-text">"TAKE A SMALL STEP EVERYDAY" and its your 2nd step today.</p><br/>
+                                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                    <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                    <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                    
+                              </div>   
+                                     
+                               </div>
+                             </div>
+                             </div>
+                             <div class="card2">
+                               <div class="card" style="width: 14rem;">
+                                   <div class="card-body">
+                                     <h5 class="card-title">DAY3</h5>
+                                     <p class="card-text">All big things come from small beginning.good thing is you are in your small beginnings💕</p>
+                                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                        <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                        <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                        
+                                  </div>   
+                                         
+                                   </div>
+                                 </div>
+                                 </div>
+                                 <div class="card2">
+                                   <div class="card" style="width: 13rem;">
+                                       <div class="card-body">
+                                         <h5 class="card-title">DAY4</h5>
+                                         <p class="card-text">The secret of your future is hidden in your daily routine,and your secrets are safe with us.🤫</p>
+                                         <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                            <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                            <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                            
+                                      </div>   
+                                             
+                                       </div>
+                                     </div>
+                                     </div>
+                                     <div class="card2">
+                                       <div class="card" style="width: 13rem;">
+                                           <div class="card-body">
+                                             <h5 class="card-title">DAY5</h5>
+                                             <p class="card-text">forget hi-fi🙏or wi-fi📶, but don't forget your in your day five.</p><br/>
+                                             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                
+                                          </div>   
+                                                 
+                                           </div>
+                                         </div>
+                                         </div>
+                                         <div class="card2">
+                                           <div class="card" style="width: 13rem;">
+                                               <div class="card-body">
+                                                 <h5 class="card-title">DAY6</h5>
+                                                 <p class="card-text">its your day six, remember this, your ganna change that's tho fix😎.</p>
+                                                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                    <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                    <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                    
+                                              </div>   
+                                                     
+                                               </div>
+                                             </div>
+                                             </div>
+                                             <div class="card2">
+                                               <div class="card" style="width: 13rem;">
+                                                   <div class="card-body">
+                                                     <h5 class="card-title">DAY7</h5>
+                                                     <p class="card-text">slow and steady wins the race.so,are you ready?🏃‍♂️</p><br/>
+                                                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                        <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                        <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                        
+                                                  </div>   
+                                                         
+                                                   </div>
+                                                 </div>
+                                                 </div>
+                                 </div>
+                                 <div class="cards">
+                                    <div class="card3">
+                                       <div class="card" style="width: 13rem;">
+                                           <div class="card-body">
+                                             <h5 class="card-title">DAY8</h5>
+                                             <p class="card-text">fight! fight! everything's gonna change. fight on your day eight🥊🥊</p><br/>
+                                             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                
+                                          </div>   
+                                                 
+                                           </div>
+                                         </div>
+                                         </div>
+                                         <div class="card3">
+                                           <div class="card" style="width: 14rem;">
+                                               <div class="card-body">
+                                                 <h5 class="card-title">DAY9</h5>
+                                                 <p class="card-text">how r u❓i hope your fine,on your day nine,one day you'll definitely gonna shine✨.</p>
+                                                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                    <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                    <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                    
+                                              </div>   
+                                                     
+                                               </div>
+                                             </div>
+                                             </div>
+                                             <div class="card3">
+                                               <div class="card" style="width: 13rem;">
+                                                   <div class="card-body">
+                                                     <h5 class="card-title">DAY10</h5><br/>
+                                                     <p class="card-text">dont give up now! your nearly halfway👏</p><br/>
+                                                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                        <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                        <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                        
+                                                  </div>   
+                                                         
+                                                   </div>
+                                                 </div>
+                                                 </div>
+                                                 <div class="card3">
+                                                   <div class="card" style="width: 13rem;">
+                                                       <div class="card-body">
+                                                         <h5 class="card-title">DAY11</h5><br/>
+                                                         <p class="card-text">10 days from now,you'll thank yourself.🤝</p><br/>
+                                                         <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                            <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                            <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                            
+                                                      </div>   
+                                                             
+                                                       </div>
+                                                     </div>
+                                                     </div>
+                                                     <div class="card3">
+                                                       <div class="card" style="width: 13rem;">
+                                                           <div class="card-body">
+                                                             <h5 class="card-title">DAY12</h5><br/>
+                                                             <p class="card-text">I can't wait to tell, your on your day twelve🥳.</p><br/>
+                                                             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                                <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                                <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                                
+                                                          </div>   
+                                                                 
+                                                           </div>
+                                                         </div>
+                                                         </div>
+                                                         <div class="card3">
+                                                           <div class="card" style="width: 13rem;">
+                                                               <div class="card-body">
+                                                                 <h5 class="card-title">DAY13</h5><br/>
+                                                                 <p class="card-text">trin! trin!📞📞 its already day thirtrinnn...</p><br/>
+                                                                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                                    <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                                    <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                                    
+                                                              </div>   
+                                                                     
+                                                               </div>
+                                                             </div>
+                                                             </div>
+                                                             <div class="card3">
+                                                               <div class="card" style="width: 13rem;">
+                                                                   <div class="card-body">
+                                                                     <h5 class="card-title">DAY14</h5>
+                                                                     <p class="card-text">are you keeping up on your routine on day fourteen?</p><br/>
+                                                                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                                        <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                                        <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                                        
+                                                                  </div>   
+                                                                         
+                                                                   </div>
+                                                                 </div>
+                                                                 </div>
+                                                 </div>
+                                                   
+                  <div class="cards">
+                    <div class="card4">
+                       <div class="card" style="width: 13rem;">
+                           <div class="card-body">
+                             <h5 class="card-title">DAY15</h5>
+                             <p class="card-text">we are there to help you,your never unseen,and yeah its day fifteen.</p>
+                             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                
+                          </div>   
+                                 
+                           </div>
+                         </div>
+                         </div>
+                         <div class="card4">
+                           <div class="card" style="width: 13rem;">
+                               <div class="card-body">
+                                 <h5 class="card-title">DAY16</h5>
+                                 <p class="card-text">"Do something today that your future self will tak you for"</p><br/>
+                                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                    <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                    <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                    
+                              </div>   
+                                     
+                               </div>
+                             </div>
+                             </div>
+                             <div class="card4">
+                               <div class="card" style="width: 12rem;">
+                                   <div class="card-body">
+                                     <h5 class="card-title">DAY17</h5><br/>
+                                     <p class="card-text">Ohh wait,dont quit,you can do it.</p><br/>
+                                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                        <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                        <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                        
+                                  </div>   
+                                         
+                                   </div>
+                                 </div>
+                                 </div>
+                                 <div class="card4">
+                                   <div class="card" style="width: 13rem;">
+                                       <div class="card-body">
+                                         <h5 class="card-title">DAY18</h5>
+                                         <p class="card-text">hurray! its day eighteen, there's only 2 days in between.</p><br/>
+                                         <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                            <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                            <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                            
+                                      </div>   
+                                             
+                                       </div>
+                                     </div>
+                                     </div>
+                                     <div class="card4">
+                                       <div class="card" style="width: 13rem;">
+                                           <div class="card-body">
+                                             <h5 class="card-title">DAY19</h5><br/>
+                                             <p class="card-text">Inhale.Exhale.You can do this..</p><br/>
+                                             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                
+                                          </div>   
+                                                 
+                                           </div>
+                                         </div>
+                                         </div>
+                                         <div class="card4">
+                                           <div class="card" style="width: 13rem;">
+                                               <div class="card-body">
+                                                 <h5 class="card-title">DAY20</h5>
+                                                 <p class="card-text">Make it happen and shock everyone,your just a step away..</p><br/>
+                                                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                    <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                    <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                    
+                                              </div>   
+                                                     
+                                               </div>
+                                             </div>
+                                             </div>
+                                             <div class="card4">
+                                               <div class="card" style="width: 15rem;">
+                                                   <div class="card-body">
+                                                     <h5 class="card-title">DAY21</h5>
+                                                     <p class="card-text">"you're always one decision away from a totally  different life". Thank yourself for making that decision.OK bye</p>
+                                                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                        <input type="radio" class="btn-check" id="btncheck1" autocomplete="off">
+                                                        <label class="btn btn-outline-success" > <input type="checkbox"> &nbsp;completed</label>
+                                                        
+                                                  </div>   
+                                                         
+                                                   </div>
+                                                 </div>
+                                                 </div>
+                                 </div>
+                                 </form>
+                                </div>
+                    <script src="habit.js"></script>
+                    </body>
+                    </html>

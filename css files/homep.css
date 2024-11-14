@@ -1,0 +1,142 @@
+
+
+.image{
+    mix-blend-mode: multiply;
+    margin-left:1%;
+    
+}
+.txt{
+    margin-left: -83%;
+}
+.b{
+    margin-left: 5%;
+    padding:5%;
+}
+.card1{
+    display: flex;
+    padding-left:5px;
+    padding-top:30px;
+    border:black;
+}
+  
+.card2{
+    display:flex;
+    padding-left:5px;
+    padding-top:10px;
+}
+.cards{
+    padding:10px;
+    margin-top:-47%;
+    margin-left: 25%;
+}
+.card3{
+    padding-left:20px;
+}
+.card5{
+  padding-left:25.5%;
+}
+.cardn {
+    margin-top:7%;
+    margin-left:1%;
+    width: 1100px;
+    height: 300px;
+    border-radius: 4px;
+    background: #f9f7f7;
+    gap: 5px;
+    padding: .4em;
+  }
+  
+  .cardn p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #ffffff;
+    border: 1px solid #d5cfcf;
+    display: flex;
+    justify-content:left;
+    align-items:start;
+  }
+  
+  .cardn p:hover {
+    flex: 4;
+  }
+  
+  .cardn p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align:start;
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #e8e6e7;
+    letter-spacing: .1em;
+  }
+  
+  .cardn p:hover span {
+    transform: rotate(0);
+  }
+  body {
+    margin: 0%;
+      }
+      
+      .sidebar {
+        background-color: #f4f3f3;
+        color: #fff;
+        width: 320px;
+        height: 99vh;
+        text-align: center;
+      }
+      .to{
+        margin-top:12%
+
+      }
+      .too{
+        margin-top:4%;
+      }
+     
+      
+      .sidebar ul {
+    
+        list-style-type: none;
+        padding:70px;
+        margin:0px;
+        
+    }
+      .sidebar ul a{
+        display:block;
+        line-height: 130%;
+        border-radius: 5%;
+        font-size:25px;
+        color:rgb(17, 16, 16);
+        padding-left: 0px;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 12px 0px#8d8686;
+        
+        border-top:1px solid rgb(255, 255, 255);
+        border-bottom:3px solid rgb(138, 138, 139);
+    
+    }
+    ul li:hover a{
+        padding-left:10px;
+        background-color:rgb(254, 255, 255)
+    
+    }
+      .sidebar li {
+        padding:20px;
+        margin-bottom: 10px;
+      }
+      
+      .sidebar a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .l{
+        margin-top:280px;
+      }
+    
+      .habit{
+        margin-left:33%;
+        margin-top:0%;
+      }
